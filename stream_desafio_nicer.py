@@ -6,6 +6,11 @@ import seaborn as sns ;
 
 import matplotlib.pyplot as plt
 import seaborn as sns                     ;   import shapely.wkt
+from sklearn import datasets, linear_model
+from sklearn.model_selection import train_test_split, KFold, cross_val_score
+from sklearn.linear_model import LinearRegression, Lasso, LassoCV, Ridge, RidgeCV
+from sklearn.preprocessing import PolynomialFeatures, StandardScaler
+from sklearn.metrics import mean_squared_error, r2_score
 
 ########################################## LIBRERIAS ###########################################
 #-----------------------------------------------------------------------------------------------
