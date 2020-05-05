@@ -2,25 +2,10 @@
 
 import numpy as np ; import pandas as pd ; import geopandas as gpd
 import streamlit as st ; import pickle
-import seaborn as sns ; import re ; import time
-import unidecode ; import statsmodels.api as sm
+import seaborn as sns ; 
 
-from bokeh.plotting import figure
-from sklearn import datasets, linear_model
-from sklearn.model_selection import train_test_split, KFold, cross_val_score
-from sklearn.linear_model import LinearRegression, Lasso, LassoCV, Ridge, RidgeCV
-from sklearn.preprocessing import PolynomialFeatures, StandardScaler
-from sklearn.metrics import mean_squared_error, r2_score
-from sklearn import preprocessing
-from sklearn import metrics
-
-from shapely.geometry import Polygon, Point, LineString, LinearRing, MultiPolygon
 import shapely as sp                      ;   import matplotlib.pyplot as plt
 import seaborn as sns                     ;   import shapely.wkt
-from shapely.ops import cascaded_union    ;   from IPython.display import display
-import plotly.graph_objects as go
-
-plt.rcParams.update({'figure.max_open_warning': 0})
 
 ########################################## LIBRERIAS ###########################################
 #-----------------------------------------------------------------------------------------------
@@ -113,7 +98,9 @@ def datos_nuevos(loc_):
     return prediccion
 
 
-# BOTONERA SIDEBAR IZQUIERDA
+###################################### FUNCION PREDICTORA ######################################
+#-----------------------------------------------------------------------------------------------
+########################################### SIDE BAR ###########################################
 
 st.sidebar.subheader('PREDICTOR DE PRECIOS')
 st.sidebar.text('Desafío 2 - Grupo 1')
@@ -128,7 +115,7 @@ if st.sidebar.checkbox("Amenities"):  amenities = 1
 else:                                 amenities = 0
 
 
-###################################### FUNCION PREDICTORA ######################################
+########################################### SIDE BAR ###########################################
 #-----------------------------------------------------------------------------------------------
 ######################################## CONTROLADORES #########################################
 
