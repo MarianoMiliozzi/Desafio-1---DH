@@ -4,7 +4,7 @@ import numpy as np ; import pandas as pd ; import geopandas as gpd
 import streamlit as st ; import pickle
 import seaborn as sns ; 
 
-import shapely as sp                      ;   import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 import seaborn as sns                     ;   import shapely.wkt
 
 ########################################## LIBRERIAS ###########################################
