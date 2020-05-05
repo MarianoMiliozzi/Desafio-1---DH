@@ -1,0 +1,1 @@
+web: sh create_config.sh && streamlit run stream_desafio_nicer.py
