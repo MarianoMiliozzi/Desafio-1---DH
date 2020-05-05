@@ -5,6 +5,7 @@ streamlit==0.58.0
 matplotlib==3.1.3
 seaborn==0.10.0
 
-GEOS == geos-3.7.3.tar.bz2
+Fiona == 1.8.4
+GDAL == 2.3.3
 
-shapely==1.6.4.post1
+Shapely==1.6.4.post1
