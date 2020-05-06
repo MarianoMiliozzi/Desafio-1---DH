@@ -6,6 +6,7 @@ import seaborn as sns ;
 
 import matplotlib.pyplot as plt
 import seaborn as sns                     ;   import shapely.wkt
+
 from sklearn import datasets, linear_model
 from sklearn.model_selection import train_test_split, KFold, cross_val_score
 from sklearn.linear_model import LinearRegression, Lasso, LassoCV, Ridge, RidgeCV
@@ -107,10 +108,7 @@ def datos_nuevos(loc_):
 #-----------------------------------------------------------------------------------------------
 ########################################### SIDE BAR ###########################################
 
-st.sidebar.subheader('PREDICTOR DE PRECIOS')
-st.sidebar.text('Desafío 2 - Grupo 1')
-
-
+st.sidebar.subheader('CARACTERíSTICAS')
 
 prop_ =  st.sidebar.selectbox('Tipo de Propiedad:',('PH','apartment','house','store'))
 size_ =  st.sidebar.selectbox('Tamaño:',('normal','big','xl'))
@@ -161,7 +159,7 @@ def resul():
 if amenities ==1:
     amen = 'Con Amenities'
 else:
-    amen='Sin Amenities'
+    amen = 'Sin Amenities'
 
 
 if st.button('Predecir'):
